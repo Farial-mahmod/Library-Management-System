@@ -12,4 +12,10 @@ router.get('/cool', function (req, res, next) {
 	}
 );
 
+router.get("/about", function (req, res) {
+	res.json({ user: 'library' })
+  // res.send("About this wiki");
+});
+
+
 module.exports = router;
